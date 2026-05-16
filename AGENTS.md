@@ -21,6 +21,7 @@ Use Kotlin with the project-wide style set to `official` and 4-space indentation
 
 ## Testing Guidelines
 Use JUnit for local unit tests and AndroidX/JUnit4 for instrumented tests. Name unit tests with the `*Test.kt` suffix and place them under `app/src/test/java/`. Use `*InstrumentedTest.kt` under `app/src/androidTest/java/` for device-based checks. Keep tests focused on observable behavior; for Compose UI, prefer assertion-based tests over manual inspection.
+Follow a strict TDD workflow for changes: write the test first, verify it fails for the right reason, implement only enough production code to make it pass, and confirm the test exercises real production behavior rather than a stubbed shortcut. Do not cheat: the test must fail before the fix and must verify the actual production code path.
 
 ## Commit & Pull Request Guidelines
 The current history is brief, with commits like `scaffold android app` and `compile files`. Keep future commit messages short, imperative, and specific, such as `add theme colors` or `fix greeting preview`. Pull requests should include a clear summary, the commands used to verify the change, and screenshots or screen recordings for UI updates. Link related issues when available.
