@@ -65,9 +65,10 @@ Convert tasks from an OpenSpec change to beads.
 
    For each pending task:
    - Create a new bead for the task with description and status
-   - Make sure the description is clear and actionable. If needed include links to relevant context files or sections.
+   - Make sure the description is clear and actionable, and put all relevant information in its description. If needed include links to relevant context files or sections.
    - Keep the dependencies between tasks in the bead
-   - Mention to mark the relevant task as complete in the CLI after implementing each task
+   - in the bead description always mention to mark the relevant task as complete after completing the task
+   - also mention to commit when the bead is completed
 
    **Pause if:**
    - Task is unclear → ask for clarification
