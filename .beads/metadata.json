@@ -1,0 +1,7 @@
+{
+  "database": "dolt",
+  "backend": "dolt",
+  "dolt_mode": "embedded",
+  "dolt_database": "MyStudy",
+  "project_id": "97ea7cc4-0ca2-4f5d-a17e-bc1c140a2ea9"
+}
